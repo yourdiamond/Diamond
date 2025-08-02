@@ -4,9 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOLO - Diamond</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>tuff as </p>
-    <a href="/Page 1/">Page 1</a>
+
+    <div class="page-container">
+        <div class="Title-Top-Left">Diamond Game's Studios</div>
+        <div class="Title-Top-Right">Socials</div>
+
+        <div class="socials-tab">
+            <h2>Socials</h2>
+            <li>X</li>
+            <li>Tiktok</li>
+            <li>Youtube</li>
+            <li></li>
+        </div>
+
+        <div class="collapsible-container">
+            <div>
+                <button class="accordion-button">
+                    Trials: Game 1
+                </button>
+                <div class="accordion-content-trials">
+                    <p>
+                        Within this highly detailed and visually immersive Roblox experience, players must navigate a tense and realistic Red Light, Green Light game, where a single misstep results in instant, brutal elimination.
+                    </p>
+                    <div>
+                        <img src="Images/game1thumbnail.png" class="game-thumbnail" alt="Game 1 Image">
+                    </div>
+                    <div class="game-link">
+                        <a href="https://www.roblox.com/games/130959375125232/Trials-Game-1">Click Here</a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <button class="accordion-button">
+                    Shoreline Salvage
+                </button>
+                <div class="accordion-content-shoreline">
+                    <p>
+                        Embark on a fun-filled adventure on the beautiful Roblox beach, where you'll spend your days sifting through the sand in search of hidden treasures. With each scoop, you might uncover valuable items like rare gems and ancient artifacts, or you might find silly junk like plastic bag's and bottle caps. The more you dig, the more exciting your discoveries become!
+                    </p>
+                    <div>
+                        <img src="Images/shoreline-sandsifter.png" class="game-thumbnail" alt="Sand sifting image">
+                    </div>
+                    <div class="game-link">
+                        <a href="https://www.roblox.com/games/107087731071910/Shoreline-Salvage">Click Here</a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <button class="accordion-button">
+                    ???
+                </button>
+                <div class="accordion-content-mystery">
+                    <p>
+                        ???
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Diamond Game's Studios - From <a href="https://official-holo.com">official-holo.com</a></p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const accordionButtons = document.querySelectorAll('.accordion-button');
+            accordionButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const content = button.nextElementSibling;
+                    content.classList.toggle('open');
+                });
+            });
+        });
+    </script>
 </body>
 </html>

@@ -1,0 +1,170 @@
+body {
+    background: linear-gradient(135deg, #0077b6, #00b4d8, #48cae4, #90e0ef, #ade8f4);
+    background-size: 200%;
+    font-family: sans-serif;
+    
+    /* --- The new sticky footer styles start here --- */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.page-container {
+    flex: 1; /* This is the key part - it makes the container grow */
+}
+
+/* --- The rest of your existing CSS, no major changes needed here --- */
+
+.Title-Top-Right {
+    color: rgb(81, 240, 252);
+    font-weight: bold;
+    background-color: rgb(170, 253, 253);
+    text-align: center;
+    font-size: 70px;
+    font-family: sans-serif;
+    margin-left: 50%;
+    margin-right: 0%;
+    background-image: url('Images/diamondtexture1.jpg');
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 90%;
+    width: 40%;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    -webkit-text-stroke: #f1f1f1 0.5px;
+}
+
+.Title-Top-Left {
+    color: rgb(81, 240, 252);
+    font-weight: bold;
+    background-color: rgb(170, 253, 253);
+    text-align: center;
+    font-size: 70px;
+    font-family: sans-serif;
+    margin-left: 0%;
+    margin-right: 20%;
+    background-image: url('Images/diamondtexture1.jpg');
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 90%;
+    width: 40%;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    -webkit-text-stroke: #f1f1f1 0.5px;
+}
+
+.socials-tab {
+    font-family: sans-serif;
+    float: right;
+    margin-right: 5%;
+    margin-top: 5%;
+    background-color: rgb(255, 255, 255);
+    padding: 2%;
+    border-radius: 10px;
+    width: 800px;
+}
+
+/* New styles for the collapsible buttons */
+.collapsible-container {
+    width: 50%;
+    margin-left: 1%;
+    margin-right: 90%;
+    margin-top: 5%;
+    font-family: sans-serif;
+    flex: 1; /* This flex rule is now on the collapsible container, so it will grow */
+}
+
+/* ... rest of your accordion button and content styles ... */
+
+.accordion-button {
+    width: 80%;
+    text-align: left;
+    background-color: #f1f1f1;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin-bottom: 5px;
+    margin-right: 40%;
+    font-size: 50px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+}
+
+.accordion-content-trials {
+    width: 76%;
+    background-color: #ffffff;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding: 0 18px;
+    font-size: 20px;
+    background: url('Images/Sunview.png');
+    background-size: 130%;
+    background-position-y: -80px;
+    background-position-x: -50px;
+}
+
+.accordion-content-shoreline {
+    width: 76%;
+    background-color: #ffffff;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding: 0 18px;
+    font-size: 20px;
+    background: url('Images/shoreline-sunview.png');
+    background-size: 140%;
+    background-position-y: -80px;
+    background-position-x: -50px;
+}
+
+.accordion-content-mystery {
+    width: 76%;
+    background-color: #ffffff;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding: 0 18px;
+    font-size: 20px;
+}
+
+.accordion-content-mystery.open, .accordion-content-trials.open, .accordion-content-shoreline.open {
+    max-height: 600px; /* Adjust as needed */
+    padding: 18px;
+}
+
+.game-link {
+    margin-top: 10px;
+    background-color: aliceblue;
+    padding: 2%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 150%;
+    font-family: sans-serif;
+    border-radius: 10px;
+    opacity: 0.7;
+}
+
+.game-thumbnail {
+    width: 500px;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
